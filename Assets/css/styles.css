@@ -1,0 +1,60 @@
+/* ciertas reglas de Css */
+
+html { 
+    font-size: 16px; 
+} 
+ 
+h1 { 
+    width: 50%;
+    font-size: 2rem; /* todos los h1 seran 16 px */
+    background-color: trasparent (244, 250, 250); /* color de fondo */
+    padding: 2rem; /* relleno de 32px por los 4 lados */
+}
+
+body { 
+    font-family: "Kaisei HarunoUmi", serif; 
+    font-size: 32px;
+}
+
+/* especificidad sin hay reglas que son iguales aplica la ultima ejecutada */
+h1 { 
+    color: rgb(30, 10, 48); 
+} 
+h1 { 
+    color: rgb(3, 3, 17); 
+}
+
+/* especificidad sin ambas reglas aplican al mismo elemento con selectores diferentes
+   aplica la regla mas especifica, en este caso la clase  */
+.main-heading { 
+    color: rgb(22, 14, 51); 
+} 
+ 
+h1 { 
+    color: rgb(3, 3, 17); 
+}  
+
+main { 
+    color: green; 
+} 
+
+.primary h3 { 
+    color: tomato; 
+} 
+.secondary h3 { 
+    color: peru; 
+}
+
+.primary, 
+.secondary {
+    color: black;
+    font-size: larger;
+    font-style: italic;
+}  
+
+h3 {
+    /* Ahora serán 32px el tamaño de los h3! lo heredara del body*/ 
+    font-size: 1em; 
+    background-color: pink; 
+    padding: 0.5em; 
+}

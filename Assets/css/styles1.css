@@ -1,0 +1,50 @@
+/* bloque de instrucciones con selector de etiquetas */
+
+body {
+    color: rgb(4, 4, 15);
+}
+
+table{
+    width: 50%;
+    margin: auto;
+    /* aplicando borde solo a la tabla */
+    /* border: solid 1px #ccc; */
+}
+
+
+table, th, td {
+    /* Aplicar bordes a la tabla y a cada celda */
+    border: 1px solid #000;
+
+    /* Aplicar bordes solo parte inferior */
+    /* border-bottom: 1px solid #000; */
+
+    /* Aplicar colapsar los bordes */
+    border-collapse:collapse;
+}
+
+/* aplicando estilos color de texto y fondo al encabezado */
+thead{
+    background-color: rgb(2, 8, 20);
+    color: white;
+    font-weight: 800;
+}
+
+/* aplicando alineacion de los td y relleno o padding en los td */
+td {
+    text-align: right;
+    padding: 0.25em;
+}
+
+/* aplicando relleno en los th, recordar que como no hay nada aplicado el estandar html es 16px, o sea 0.5em son 8px  */
+th {
+    padding: 0.5em; 
+}
+    
+
+
+
+
+
+/* bloque de instrucciones con selector de clases */
+
